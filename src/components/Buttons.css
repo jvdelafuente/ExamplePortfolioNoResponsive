@@ -1,0 +1,267 @@
+.buttonscotainer {
+  /* border-right: 2px solid black; */
+  width: 20vw;
+  height: 90vh;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonsthree {
+  display: flex;
+  flex-direction: column;
+}
+.buttongif {
+  font-size: 150%;
+  font-family: "Luckiest Guy", cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 11px 11px 0px 3px, 0px 0px 0px 0px, 0px 0px 0px 0px,
+    0px 0px 0px 0px, 0px 0px 0px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  background-color: rgba(0, 0, 0, 0);
+  margin: 5% 0 5% 2%;
+  width: 10vw;
+  height: 55px;
+}
+
+.shotgif {
+  filter: drop-shadow(0.75px 0.75px 0px black);
+  margin-left: 5%;
+  width: 150px;
+  display: none;
+}
+
+#gifshot1 {
+  margin-bottom: 125%;
+}
+#gifshot2 {
+  margin-bottom: 35%;
+}
+#gifshot3 {
+  margin-top: 75%;
+}
+.buttongif:focus {
+  animation: shrinkButton 2s forwards 0.8s;
+}
+
+@keyframes shrinkButton {
+  0% {
+    width: 100%;
+  }
+  20% {
+    width: 20px;
+    font-size: 0;
+  }
+  75% {
+    width: 20px;
+    font-size: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .buttongif {
+    width: 150%;
+  }
+  .buttongif:focus {
+    display: none;
+  }
+
+  .buttonsthreegifs {
+    display: none;
+  }
+
+  .shotgif {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .buttonsthree {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonscotainer {
+    /* border-right: 2px solid black; */
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .buttongif {
+    font-size: 150%;
+    font-family: "Luckiest Guy", cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* border: 3px solid; */
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+      4px 4px 0px 0px, 5px 5px 0px 0px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5% 0 5% 2%;
+    width: 18vw;
+    height: 55px;
+  }
+
+  .buttonsthree button:hover {
+    font-size: 170%;
+  }
+  .buttongif:focus {
+    display: none;
+  }
+  .buttonsthreegifs {
+    display: none;
+  }
+
+  .shotgif {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .buttonsthree {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 5% 5% 5%;
+    padding: 0;
+    /* width: 33vw; */
+    height: auto;
+    z-index: 9999;
+    background-color: #fbfbfb;
+    max-width: 100%;
+  }
+
+  .buttonscotainer {
+    max-width: 600px;
+    background-color: #fbfbfb;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 600px;
+    height: auto;
+    z-index: 9999;
+  }
+
+  .buttongif {
+    font-size: 100%;
+    margin: 0%;
+    width: 33vw;
+    margin: 1% 5% 1% 5%;
+  }
+
+  .buttongif:focus {
+    display: none;
+  }
+
+  .buttonsthreegifs {
+    display: none;
+  }
+
+  .shotgif {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .buttonsthree {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 5% 5% 5%;
+    padding: 0;
+    /* width: 33vw; */
+    height: auto;
+    z-index: 9999;
+    background-color: #fbfbfb;
+    max-width: 100%;
+  }
+
+  .buttonscotainer {
+    max-width: 480px;
+    background-color: #fbfbfb;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 480px;
+    height: auto;
+    z-index: 9999;
+  }
+
+  .buttongif {
+    font-size: 100%;
+    margin: 0%;
+    width: 33vw;
+    margin: 1% 5% 1% 5%;
+  }
+
+  .buttongif:focus {
+    display: none;
+  }
+
+  .buttonsthreegifs {
+    display: none;
+  }
+
+  .shotgif {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .buttonsthree {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 15% 5% 5%;
+    padding: 0;
+    /* width: 33vw; */
+    height: auto;
+    z-index: 9999;
+    background-color: #fbfbfb;
+  }
+  .buttonscotainer {
+    background-color: #fbfbfb;
+    border-bottom: 2px solid black;
+
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    /* width: 100vw; */
+    height: auto;
+    z-index: 9999;
+  }
+  .buttongif {
+    font-size: 100%;
+    margin: 0%;
+    width: 33vw;
+    margin: 1% 5% 1% 5%;
+  }
+  .buttongif:focus {
+    display: none;
+  }
+  .buttonsthreegifs {
+    display: none;
+  }
+  .shotgif {
+    display: none;
+  }
+}

@@ -1,0 +1,227 @@
+.toolcontainer {
+  position: relative;
+  
+  /* height: 500px; */
+  /* background: yellow; */
+  transform-style: preserve-3d;
+  transform: rotateY(90deg);
+  /* padding-top: 9%; */
+}
+
+.esfera {
+  
+  /* width: 70px;
+  height: 70px;  */
+  /* border-radius: 25%; */
+  position: absolute;
+  /* bottom: 0%; */
+  /* left: 0%; */
+  /* background: #fff; */
+}
+
+/* @keyframes glow {
+  from {
+    box-shadow: #ff4400 0 0 10px;
+  }
+
+  50% {
+    box-shadow: #ff4400 0 0 30px;
+  }
+
+  to {
+    box-shadow: #ff4400 0 0 10px;
+  }
+} */
+
+#sol {
+  filter: drop-shadow(10px 5px 0px black);
+  width: 450%;
+  animation-name: glow;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  transform: rotateY(-90deg);
+
+}
+
+@keyframes girando {
+  from {
+    transform: rotateY(0deg) translateX(190px);
+  }
+
+  to {
+    transform: rotateY(360deg) translateX(190px);
+  }
+}
+
+@keyframes girando2 {
+  from {
+    transform: rotateY(0deg) translateX(150px);
+  }
+
+  to {
+    transform: rotateY(360deg) translateX(150px);
+  }
+}
+
+#container {
+  /* position: relative; */
+  /* perspective: 600px; */
+  animation-name: girando;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+}
+
+#container2 {
+  /* perspective: 600px; */
+  animation-name: girando;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2.8s;
+  transform-style: preserve-3d;
+  /* margin-top: 6%; */
+}
+
+#container3 {
+  /* perspective: 600px; */
+  animation-name: girando;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3.5s;
+  transform-style: preserve-3d;
+  /* margin-top: 3%; */
+}
+
+#container4 {
+  /* perspective: 600px; */
+  animation-name: girando;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  transform-style: preserve-3d;
+  /* margin-top: 12%;*/
+}
+
+#container5 {
+  /* perspective: 600px; */
+  animation-name: girando;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2.4s;
+  transform-style: preserve-3d;
+  /* margin-top: 9%; */
+}
+
+#container6 {
+  /* perspective: 600px; */
+  animation-name: girando2;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  transform-style: preserve-3d;
+  /* margin-top: 85%; */
+}
+
+@keyframes rotando {
+  from {
+    transform: rotateY(-90deg);
+  }
+
+  to {
+    transform: rotateY(-450deg);
+  }
+}
+
+#tierra {
+  /* margin-left: 45%; */
+  position: relative;
+  background: #ed9a0000;
+  /* width: 30px; */
+  /* height: 30px; */
+  animation-name: rotando;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform: rotateY(90deg);
+  /* background: #1e5799; */
+  /* background: linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  box-shadow: #1E5799 0 0 10px; */
+}
+
+#venus1 {
+  position: relative;
+  /* width: 30px; */
+  /* height: 30px;  */
+  background: #ed9a0000;
+  animation-name: rotando;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2.8s;
+  transform: rotateY(90deg);
+  /* background: #1e993d; */
+  /* background: linear-gradient(top, #1e5799 0%, #7db9e8 100%); */
+  /* box-shadow: #1E5799 0 0 10px; */
+  margin-top: 4%;
+}
+
+#marte {
+  position: relative;
+  /* width: 50px;
+  height: 50px; */
+  animation-name: rotando;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3.5s;
+  transform: rotateY(90deg);
+  background: #ed9a0000;
+}
+
+#venus2 {
+  position: relative;
+  background: #ed9a0000;
+  /* width: 50px;
+  height: 50px; */
+  animation-name: rotando;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  transform: rotateY(90deg);
+}
+
+#venus3 {
+  position: relative;
+  background: #ed9a0000;
+  animation-name: rotando;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2.4s;
+  transform: rotateY(90deg);
+}
+
+#venus4 {
+  background: #ed9a0000;
+  /* width: 50px;
+  height: 50px; */
+  animation-name: rotando;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  transform: rotateY(90deg);
+  filter: grayscale(10);
+}
+
+/* 
+@keyframes rotando2 {
+  from {
+    transform: rotateY(-90deg);
+  }
+
+  to {
+    transform: rotateY(-450deg);
+  }
+} */
+svg {
+  width: auto;
+  height: 50px;
+}
